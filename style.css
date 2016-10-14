@@ -5,7 +5,7 @@ body {
   font-family: Lato, sans-serif;
 }
 .container {
-  background: #eaf9f5;
+  background: #f4f7f8;
   display: block;
   width: 400px;
   margin: 50px auto 0;
@@ -59,8 +59,9 @@ input[type="text"] {
   height: 18px;
   padding: 10px;
   border: 1px solid #ddd;
-  background: #f9f9f9;
+  background: #e8eeef;
   border-radius: 6px;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
   font-family: Lato, sans-serif;
   color: #888;
 }
