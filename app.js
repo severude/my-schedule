@@ -104,18 +104,18 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
   var editButton = taskListItem.querySelector("button.edit");
   var deleteButton = taskListItem.querySelector("button.delete");
-  //bind editTask to edit button
-  editButton.onclick = editTask;
-  //bind deleteTask to delete button
-  deleteButton.onclick = deleteTask;
-  //bind checkBoxEventHandler to checkbox
-  checkBox.onchange = checkBoxEventHandler;
   var containsClass = taskListItem.classList.contains("editMode");
   if (containsClass) {
     editButton.innerText = "Save";
   } else {
     editButton.innerText = "Edit";
   }
+  //bind editTask to edit button
+  editButton.onclick = editTask;
+  //bind deleteTask to delete button
+  deleteButton.onclick = deleteTask;
+  //bind checkBoxEventHandler to checkbox
+  checkBox.onchange = checkBoxEventHandler;
 }
 
 var ajaxRequest = function() {
